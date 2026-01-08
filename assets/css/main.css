@@ -1163,3 +1163,80 @@ section,
   color: var(--accent-color);
 }
 
+/* Add space above Address box */
+#contact .info-wrap {
+  margin-top: 30px;
+}
+
+/* Tighten spacing under View CV */
+#contact .contact-icon-row {
+  margin-top: 10px;   /* pulls icons up */
+}
+
+/* Remove extra spacing from section title */
+#contact .section-title {
+  padding-bottom: 10px; /* was 60px */
+}
+
+/* ===== Contact List Formatting Fix ===== */
+
+.contact-list {
+  margin-top: 20px;
+  max-width: 420px;
+}
+
+/* Card */
+.contact-list-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  border-radius: 16px;
+  text-decoration: none;
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-list-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon circle */
+.icon-circle {
+  min-width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle i {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Text block */
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-text h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.contact-text p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--accent-color);
+  word-break: break-word;
+}
+
+
